@@ -4,17 +4,17 @@ import java.time.LocalDate;
 
 public class EmployeeDto {
 
-    private  long id ;
+    private  Long id ;
     private  String  name;
     private  String  email;
     private  Integer age ;
     private LocalDate dateOfJoining;
-    private  boolean isActive;
+    private  Boolean isActive;
 
     public  EmployeeDto (){
 
     }
-    public EmployeeDto(long id, String name, String email, Integer age, LocalDate dateOfJoining, boolean isActive) {
+    public EmployeeDto(Long id, String name, String email, Integer age, LocalDate dateOfJoining,Boolean isActive ) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -27,7 +27,7 @@ public class EmployeeDto {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -67,7 +67,7 @@ public class EmployeeDto {
         return isActive;
     }
 
-    public void setActive(boolean active) {
+    public void setActive(Boolean active) {
         isActive = active;
     }
 }
